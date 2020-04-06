@@ -11,7 +11,7 @@ This can be used to run multiple tasks defined in a config file
         - ```c: concurrency``` is to give concurrency to be used for running the tasks, default will be 1
         - ```t: task Id``` is for task Id, it is required with summary or status actions. It gives the status/summary of the given tasks
 - Examples of command:
-    - ```executeTask -a Execute -c 2``` - will create the taskConfig from the test_config file and execute the tasks
+    - ```executeTask -a Execute -c 2``` - will create the `taskConfig` from the `test_config` file present under ```input/files``` folder and execute the tasks
     - ```executeTask -a Execute -c 2 -p "/Users/aakhauri/anish-project/test.json"``` - will create the taskConfig from the file present at given location and then execute each task
     - ```executeTask -a Status -t "Task-1"```- gives the status of the task mentioned.
     - ```executeTask -a Summary -t "Task-1"```- gives the summary of the task mentioned.
