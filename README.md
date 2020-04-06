@@ -43,4 +43,4 @@ Add the new task configuration into ```src/config/config.json``` file, as shown 
     }
 ]
 ```
-Then add the functionality in ```src/task/default.js```. That's all. When you give the Task name as mentioned in the config, it will start executing the functionality automatically.
+Then add the functionality in ```src/task/default.js```. Just make sure the name of the method in ```default.js``` should be same as mentioned in config file under ```taskMethod```. That's all. When you give the Task name as mentioned in the config, it will start executing the functionality automatically.
