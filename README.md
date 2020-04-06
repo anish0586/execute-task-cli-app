@@ -29,7 +29,7 @@ This can be used to run multiple tasks defined in a config file
 
 # How to Add new tasks
 
-Add the new task configuration into config file, as shown below:
+Add the new task configuration into ```src/config/config.json``` file, as shown below:
 ```
 [
     {
@@ -43,4 +43,4 @@ Add the new task configuration into config file, as shown below:
     }
 ]
 ```
-Then add the functionality in src/task/default.js. That's all. When you give the Task name as mentioned in the config, it will start executing the functionality automatically.
+Then add the functionality in ```src/task/default.js```. That's all. When you give the Task name as mentioned in the config, it will start executing the functionality automatically.
