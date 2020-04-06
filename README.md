@@ -2,10 +2,6 @@
 This can be used to run multiple tasks defined in a config file
 
 ## Instructions
-- Use ```npm run start``` to run the tool.
-    - It runs the ```execute.js``` file which requires an input configuration file to be specified and an execution method.
-- Use ```npm run generate``` to use input generating scripts located in the ```input``` file to generate input configuration files located in ```input/files```.
-
 - Use ```npm i``` to install dependencies
 - Use ```npm install .``` to install the app or ```npm install -g .``` to install it globally
 - Use ```executeTask``` command to see the options available.
@@ -19,8 +15,32 @@ This can be used to run multiple tasks defined in a config file
     - ```executeTask -a Execute -c 2 -p "/Users/aakhauri/anish-project/test.json"``` - will create the taskConfig from the file present at given location and then execute each task
     - ```executeTask -a Status -t "Task-1"```- gives the status of the task mentioned.
     - ```executeTask -a Summary -t "Task-1"```- gives the summary of the task mentioned.
-    
-{code}
-test
-{code}
 
+## Folder structure details
+
+| short name | path | details |
+| --- | --- | --- |
+| root | ./src | source code, stores index.js, execute and query functionalties |
+| config | {root}/config/config.json | stores the configuration of each tasks. |
+| execution | {root}/execution/default.js | this is the main file that performs the execution. It gets the method to be executed from the config and then calls the required method |
+| task | {root}/task/default.js | this is where the each tasks functionality will be defined. |
+| input | {root}/inputs/files | folder for the input file taskConfig.json which is generated based on the config file provided sample available in test_config.json under {root}/inputs/files |
+| output | {root}/taskResults | folder for all the output files for the task execution. It will have one json file for each task alongwith a allResults file which stores success and failure messages for all tasks |
+
+# How to Add new tasks
+
+Add the new task configuration into config file, as shown below:
+```
+[
+    {
+        "taskName": "Delay Task",
+        "taskDescription": "Delay task for given time, then show success or failure",
+        "taskMethod": "delayTask",
+        "config": [
+            "time",
+            "result"
+        ]
+    }
+]
+```
+Then add the functionality in src/task/default.js. That's all. When you give the Task name as mentioned in the config, it will start executing the functionality automatically.
