@@ -1,0 +1,18 @@
+{
+	"ID": "Task-2",
+	"kind": "Delay Task",
+	"description": "Delay task for given time, then show success or failure",
+	"status": "Completed",
+	"start_time": "2020-04-06T03:01:24.384Z",
+	"end_time": "2020-04-06T03:01:30.386Z",
+	"elapsed_time": 6002,
+	"config": {
+		"time": "6000",
+		"result": "success"
+	},
+	"method": "delayTask",
+	"result": {
+		"randon_number": 592
+	},
+	"error_message": ""
+}

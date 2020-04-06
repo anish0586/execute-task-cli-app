@@ -1,0 +1,11 @@
+[
+    {
+        "taskName": "Delay Task",
+        "taskDescription": "Delay task for given time, then show success or failure",
+        "taskMethod": "delayTask",
+        "config": [
+            "time",
+            "result"
+        ]
+    }
+]

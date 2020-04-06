@@ -1,0 +1,16 @@
+{
+	"ID": "Task-3",
+	"kind": "Delay Task",
+	"description": "Delay task for given time, then show success or failure",
+	"status": "Failed",
+	"start_time": "2020-04-06T03:01:28.653Z",
+	"end_time": "2020-04-06T03:01:32.661Z",
+	"elapsed_time": 4008,
+	"config": {
+		"time": "4000",
+		"result": "failure"
+	},
+	"method": "delayTask",
+	"result": "",
+	"error_message": "Emulating task failure"
+}
