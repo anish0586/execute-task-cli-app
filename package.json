@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.7.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "update-json-file": "^1.1.1",
     "yargs": "^13.2.4"
   }
